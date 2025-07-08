@@ -1,0 +1,23 @@
+{
+  "name": "chocobaha",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NomacAxe/ChocoBaha_web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NomacAxe/ChocoBaha_web/issues"
+  },
+  "homepage": "https://github.com/NomacAxe/ChocoBaha_web#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
