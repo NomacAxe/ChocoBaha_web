@@ -1,19 +1,15 @@
-exports.success = function (res, message, status){
-    const statusCode = status || 200;
-    const mensajeOk = message || '';
-    res.status(statusCode).send({
+exports.success = function (req, res, message = '', status = 200){
+    res.status(status).send({
         error: false,
-        status: statusCode,
+        status: status,
         body: message
     });
 }
 
-exports.error = function (res, message, status){
-    const statusCode = status || 500;
-    const mensajeError = message || 'Error interno';
+exports.error = function (req, res, mensaje = 'Error interno', status = 500){
     res.status(status).send({
         error: true,
-        status: statusCode,
-        body: messageError
+        status: status,
+        body: mensaje
     });
 }
